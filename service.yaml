@@ -1,0 +1,15 @@
+apiVersion: v1
+# 쿠버네티스 객체 타입
+kind: Service
+metadata:
+  name: nginx
+spec:
+  selector:
+    # 아래 pod를 노출 시킴
+    tutorial-key: tutorial-value
+  # 노출시킬 포트
+  ports:
+    - protocol: "TCP"
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
