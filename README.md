@@ -43,11 +43,11 @@ kubectl apply -f=deployment.yaml -f=service.yaml
 kubectl get services
 ```
 
-로컬 환경에서 테스트하기 위해 minikube를 이용해서 `nginx`라 이름 붙인 service를 실행한다.\
+로컬 환경에서 테스트하기 위해 minikube를 이용해서 `nginx-service`라 이름 붙인 service를 실행한다.\
 그러면 접근할 수 있는 임의의 URL을 제공한다.
 
 ```
-minikube service nginx
+minikube service nginx-service
 ```
 
 ## 배포 중단

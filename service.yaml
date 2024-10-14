@@ -2,7 +2,7 @@ apiVersion: v1
 # 쿠버네티스 객체 타입
 kind: Service
 metadata:
-  name: nginx
+  name: nginx-service
 spec:
   selector:
     # 아래 pod를 노출 시킴
