@@ -32,7 +32,7 @@ docker build . -t gim2origin/nginx-tutorial:2
 docker push gim2origin/nginx-tutorial:2
 ```
 
-## 쿠버네티스를 이용해 배포
+## 쿠버네티스를 이용한 배포
 
 언제든 아래 yaml 설정을 수정한 뒤 apply 해주면 배포 리소스가 마법처럼 바뀐다.
 
@@ -45,6 +45,8 @@ kubectl apply -f=deployment.yaml -f=service.yaml
 ```
 kubectl get services
 ```
+
+## Minikube를 이용한 테스트
 
 로컬 환경에서 테스트하기 위해 minikube를 이용해서 `nginx-service`라 이름 붙인 service를 실행한다.\
 그러면 접근할 수 있는 임의의 URL을 제공한다.
